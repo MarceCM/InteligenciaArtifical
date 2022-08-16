@@ -18,6 +18,18 @@
     { "tag": "bolsas",
       "patterns":["Quais são as bolsas de estudo que eu posso obter?", "Quais são as bolsas de estudos internacionais?"],
       "responses": ["Programa Top España, Brafitec, Santander Universidades Fórmula Santander, Santander Universidades Bolsas Ibero Americanas e Programa Santander Mundi"]
+    },
+    { "tag": "bolsaFórmula",
+    "patterns":["O que é a bolsa Formula Santander?", "Como faço para participar do Programa Fórmula Santander"],
+    "responses":["O Programa Fórmula Santander premia o selecionado com uma bolsa-auxílio no valor equivalente a 5 mil euros para promover o intercâmbio de um semestre acadêmico em uma das universidades conveniadas da FEI, presente na região da Ibero-América. Para saber como se inscrever e os ultimos resultados, clique aqui: https://portal.fei.edu.br/relacoes-internacionais#formula"]
+    },
+    { "tag": "bolsaMundi",
+    "patterns":["O que é a bolsa Santander Mundi?", "Como faço para participar do Santander Mundi"],
+    "responses":["Nesta 1ª edição, o Programa concederá 100 bolsas, no valor equivalente a 4 mil euros, a estudantes de graduação e de pós-graduação para realizarem um intercâmbio de até um semestre em um dos mais de 20 países em que o Santander está presente. Para saber mais informações e como se inscrever, clique aqui: https://portal.fei.edu.br/relacoes-internacionais#mundi"]
+    },
+    { "tag": "bolsaCapes",
+    "patterns":["O que é a bolsa Capes?","O que é a bolsa BRAFITEC?", "Como faço para participar do programa de Bolsas da CAPES?"],
+    "responses":["Programa de bolsas mantido pela CAPES, consiste em projeto da FEI em colaboração com o Institute Catholique dArts et Métiers, França, para fomentar o intercâmbio anual e de dupla-diplomação em nível de graduação, estimulando a aproximação das estruturas curriculares, inclusive no que diz respeito à equivalência e reconhecimento mútuo de atividades acadêmicas. Para saber como se inscrever e os ultimos resultados, clique aqui: https://portal.fei.edu.br/relacoes-internacionais#capes"]
     }
   ]
   }
