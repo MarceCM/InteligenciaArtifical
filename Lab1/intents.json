@@ -1,0 +1,15 @@
+{"intents":[
+    { "tag": "saudacao",
+      "patterns":["Ola","Opa","Oi", "tudo bem"],
+      "responses": ["Oi","Olá"]
+    },
+    { "tag": "despedida",
+      "patterns":["valeu","tchau","Obrigado","tks"],
+      "responses": ["Até breve","Falou"]
+    },
+    { "tag": "convenios",
+      "patterns":["Quais são os convênios que a FEI possui?","Quais as relações que a FEI tem com o exterior?", "Quais instituições internacionais a FEI é parceira?"],
+      "responses": ["Cal Poly Pomona, CONESTOGA, Universidade da Coruña, Coventry University, University of Dunaújváros"]
+    }
+  ]
+  }
