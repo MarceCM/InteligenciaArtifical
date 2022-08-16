@@ -9,15 +9,15 @@
     },
     { "tag": "convenios",
       "patterns":["Quais são os convênios que a FEI possui?","Quais as relações que a FEI tem com o exterior?", "Quais instituições internacionais a FEI é parceira?"],
-      "responses": ["Cal Poly Pomona, CONESTOGA, Universidade da Coruña, Coventry University, University of Dunaújváros"]
+      "responses": ["Cal Poly Pomona, CONESTOGA, Universidade da Coruña, Coventry University, University of Dunaújváros, Goethe Institut, ICAM, Karlsruhe Institute of Technology, New York Institute of Technology, Providence University, Universidad de Salamanca, Santander Universidades, Aliança Francesa, Universidad de Alicante, AUSJAL, Universitat Autonoma de Barcelona, Linköping University"]
+    },
+    {"tag": "intercambio",
+    "patterns":["Como faço para participar de um intercâmbio com a FEI?", "A FEI tem intercâmbio?"],
+    "responses": ["A FEI possui programas de intercâmbio para alunos regularmenes matriculados nos cursos de graduação e pós-graduação do Centro Universitário FEI, campi São Bernardo do Campo e São Paulo. Para saber mais e como se candidatar clique aqui: https://portal.fei.edu.br/relacoes-internacionais#intercambio"]
     },
     { "tag": "bolsas",
       "patterns":["Quais são as bolsas de estudo que eu posso obter?", "Quais são as bolsas de estudos internacionais?"],
       "responses": ["Programa Top España, Brafitec, Santander Universidades Fórmula Santander, Santander Universidades Bolsas Ibero Americanas e Programa Santander Mundi"]
-    },
-    { "tag": "intercambio",
-      "patterns":["Quais são os pré-requisitos para participar?"],
-      "responses": ["Estar regularmente matriculado no Centro Universitário FEI. Estar em dia com as obrigações assumidas no Contrato de Prestação de Serviços Educacionais assinado com a FEI. Ter integralizado no mínimo 30% do currículo previsto para seu curso, no momento do início previsto da viagem de estudos. Ter média aritmética de todas as disciplinas cursadas igual ou maior a 6,0 (seis). Manifestar compromisso de retornar ao Brasil após o período de estudos no exterior para conclusão dos estudos de graduação no Centro Universitário FEI. Possuir proficiência no idioma do curso de destino."]
     }
   ]
   }
