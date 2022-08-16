@@ -9,7 +9,7 @@
     },
     { "tag": "convenios",
       "patterns":["Quais são os convênios que a FEI possui?","Quais as relações que a FEI tem com o exterior?", "Quais instituições internacionais a FEI é parceira?"],
-      "responses": ["Cal Poly Pomona, CONESTOGA, Universidade da Coruña, Coventry University, University of Dunaújváros"]
+      "responses": ["Cal Poly Pomona, CONESTOGA, Universidade da Coruña, Coventry University, University of Dunaújváros, Goethe Institut, ICAM, Karlsruhe Institute of Technology, New York Institute of Technology, Providence University, Universidad de Salamanca, Santander Universidades, Aliança Francesa, Universidad de Alicante, AUSJAL, Universitat Autonoma de Barcelona, Linköping University"]
     }
   ]
   }
