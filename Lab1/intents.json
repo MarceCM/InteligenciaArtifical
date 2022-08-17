@@ -48,7 +48,7 @@
     "responses":["+55 11 4353-2900 Ramal: 2234"]
     },
     { "tag": "local",
-    "patterns":["Qual local para contato?"],
+    "patterns":["Onde vocês ficam localizados?"],
     "responses":["Campus São Bernardo do Campo - Prédio D - Térreo - Sala 07"]
     },
     { "tag": "email",
