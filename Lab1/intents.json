@@ -19,6 +19,18 @@
       "patterns":["Quais são as bolsas de estudo que eu posso obter?", "Quais são as bolsas de estudos internacionais?"],
       "responses": ["Programa Top España, Brafitec, Santander Universidades Fórmula Santander, Santander Universidades Bolsas Ibero Americanas e Programa Santander Mundi"]
     },
+    { "tag": "bolsaSuperamosJuntos",
+    "patterns":["O que é a bolsa Santander Superamos Juntos?", "Como faço para participar do Programa Santander Superamos Juntos"],
+    "responses":["O Centro Universitário FEI está selecionando alunos de graduação dos cursos de Administração, Ciência da Computação e Engenharias de todos os campi, para o novo programa do Santander, que substituirá o Programa Ibero-americana Santander Universidades, em função da limitação de mobilidade estudantil no atual estado de pandemia da Covid-19, declarado pela Organização Mundial de Saúde (OMS). Para saber como se inscrever, clique aqui: https://portal.fei.edu.br/relacoes-internacionais#superamos"]
+    },
+    { "tag": "bolsaTopEspaña",
+    "patterns":["O que é a bolsa Top España?", "Como faço para participar do Programa Top España"],
+    "responses":["O Programa destinado a alunos de graduação e professores, a aprimorem seus conhecimentos no idioma e cultura espanhola, por meio de um curso de 3 semanas, com tudo custeado pelo Santander, em uma das instituições mais tradicionais da Europa - a Universidad de Salamanca. Para saber como se inscrever, clique aqui: https://portal.fei.edu.br/relacoes-internacionais#topespana"]
+    },
+    { "tag": "bolsaIA",
+    "patterns":["O que é a bolsa Ibero-Americanas?", "Como faço para participar do Programa bolsa Ibero-Americanas"],
+    "responses":["O Programa Ibero-Americanas premia os selecionados com uma bolsa-auxílio no valor equivalente a 3 mil euros para promover o intercâmbio de um semestre acadêmico em uma das universidades conveniadas da FEI, presente na região da Ibero-América. Para saber como se inscrever, clique aqui: https://portal.fei.edu.br/relacoes-internacionais#ibero"]
+    },
     { "tag": "bolsaFórmula",
     "patterns":["O que é a bolsa Formula Santander?", "Como faço para participar do Programa Fórmula Santander"],
     "responses":["O Programa Fórmula Santander premia o selecionado com uma bolsa-auxílio no valor equivalente a 5 mil euros para promover o intercâmbio de um semestre acadêmico em uma das universidades conveniadas da FEI, presente na região da Ibero-América. Para saber como se inscrever e os ultimos resultados, clique aqui: https://portal.fei.edu.br/relacoes-internacionais#formula"]
