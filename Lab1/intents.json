@@ -52,7 +52,7 @@
     "responses":["Campus São Bernardo do Campo - Prédio D - Térreo - Sala 07"]
     },
     { "tag": "email",
-    "patterns":["Qual e-mail para contato?"],
+    "patterns":["Qual e-mail para contato?", "Vocês tem email para contato?"],
     "responses":["internacional@fei.edu.br"]
     }
   ]
