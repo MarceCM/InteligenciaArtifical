@@ -53,7 +53,7 @@
     },
     { "tag": "email",
     "patterns":["Qual e-mail para contato?"],
-    "responses":[" internacional@fei.edu.br"]
+    "responses":["internacional@fei.edu.br"]
     }
   ]
   }
