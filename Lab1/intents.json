@@ -45,7 +45,7 @@
     },
     { "tag": "contato",
     "patterns":["Qual telefone para contato?"],
-    "responses":["+55 11 4353- 2900 Ramal: 2234"]
+    "responses":["+55 11 4353-2900 Ramal: 2234"]
     },
     { "tag": "local",
     "patterns":["Qual local para contato?"],
