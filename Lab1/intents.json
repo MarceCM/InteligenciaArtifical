@@ -4,20 +4,20 @@
       "responses": ["Oi","Olá"]
     },
     { "tag": "despedida",
-      "patterns":["Não, obrigada","Não","Só isso mesmo","Obrigada"],
-      "responses": ["FEI Internacional agradece seu contato, até breve"]
+      "patterns":["Nao, obrigada","So isso mesmo","Obrigada"],
+      "responses": ["FEI Internacional agradece seu contato, ate breve"]
     },
     { "tag": "convenios",
       "patterns":["Quais são os convênios que a FEI possui?","Quais as relações que a FEI tem com o exterior?", "Quais instituições internacionais a FEI é parceira?"],
-      "responses": ["Cal Poly Pomona, CONESTOGA, Universidade da Coruña, Coventry University, University of Dunaújváros, Goethe Institut, ICAM, Karlsruhe Institute of Technology, New York Institute of Technology, Providence University, Universidad de Salamanca, Santander Universidades, Aliança Francesa, Universidad de Alicante, AUSJAL, Universitat Autonoma de Barcelona, Linköping University"]
+      "responses": ["Cal Poly Pomona, CONESTOGA, Universidade da Coruna, Coventry University, University of Dunaujvaros, Goethe Institut, ICAM, Karlsruhe Institute of Technology, New York Institute of Technology, Providence University, Universidad de Salamanca, Santander Universidades, Aliança Francesa, Universidad de Alicante, AUSJAL, Universitat Autonoma de Barcelona, Linköping University"]
     },
     {"tag": "intercambio",
     "patterns":["Como faço para participar de um intercâmbio com a FEI?", "A FEI tem intercâmbio?"],
-    "responses": ["A FEI possui programas de intercâmbio para alunos regularmenes matriculados nos cursos de graduação e pós-graduação do Centro Universitário FEI, campi São Bernardo do Campo e São Paulo. Para saber mais e como se candidatar clique aqui: https://portal.fei.edu.br/relacoes-internacionais#intercambio"]
+    "responses": ["A FEI possui programas de intercambio para alunos regularmenes matriculados nos cursos de graduacao e pos-graduacao do Centro Universitário FEI, campi Sao Bernardo do Campo e Sao Paulo. Para saber mais e como se candidatar clique aqui: https://portal.fei.edu.br/relacoes-internacionais#intercambio"]
     },
     { "tag": "bolsas",
       "patterns":["Quais são as bolsas de estudo que eu posso obter?", "Quais são as bolsas de estudos internacionais?"],
-      "responses": ["Programa Top España, Brafitec, Santander Universidades Fórmula Santander, Santander Universidades Bolsas Ibero Americanas e Programa Santander Mundi"]
+      "responses": ["Programa Top Espana, CAPES/Brafitec, Santander Superamos Juntos, Formula Santander, Bolsas Ibero Americanas e Programa Santander Mundi"]
     },
     { "tag": "bolsaSuperamosJuntos",
     "patterns":["O que é a bolsa Santander Superamos Juntos?", "Como faço para participar do Programa Santander Superamos Juntos"],
