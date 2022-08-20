@@ -4,8 +4,8 @@
       "responses": ["Oi","Olá"]
     },
     { "tag": "despedida",
-      "patterns":["valeu","tchau","Obrigado","tks"],
-      "responses": ["Até breve","Falou"]
+      "patterns":["Não, obrigada","Não","Só isso mesmo","Obrigada"],
+      "responses": ["FEI Internacional agradece seu contato, até breve"]
     },
     { "tag": "convenios",
       "patterns":["Quais são os convênios que a FEI possui?","Quais as relações que a FEI tem com o exterior?", "Quais instituições internacionais a FEI é parceira?"],
@@ -44,16 +44,16 @@
     "responses":["Programa de bolsas mantido pela CAPES, consiste em projeto da FEI em colaboração com o Institute Catholique dArts et Métiers, França, para fomentar o intercâmbio anual e de dupla-diplomação em nível de graduação, estimulando a aproximação das estruturas curriculares, inclusive no que diz respeito à equivalência e reconhecimento mútuo de atividades acadêmicas. Para saber como se inscrever e os ultimos resultados, clique aqui: https://portal.fei.edu.br/relacoes-internacionais#capes"]
     },
     { "tag": "contato",
-    "patterns":["Qual telefone para contato?"],
-    "responses":["+55 11 4353-2900 Ramal: 2234"]
+    "patterns":["Qual telefone para contato?", "Vocês tem telefone para contato?"],
+    "responses":["Nosso telefone para contato é o: +55 11 4353-2900 Ramal: 2234"]
     },
     { "tag": "local",
     "patterns":["Onde vocês ficam localizados?"],
-    "responses":["Campus São Bernardo do Campo - Prédio D - Térreo - Sala 07"]
+    "responses":["Nós estamos localizados no: Campus São Bernardo do Campo - Prédio D - Térreo - Sala 07"]
     },
     { "tag": "email",
     "patterns":["Qual e-mail para contato?", "Vocês tem email para contato?"],
-    "responses":["internacional@fei.edu.br"]
+    "responses":["Nosso email para contato é: internacional@fei.edu.br"]
     }
   ]
   }
