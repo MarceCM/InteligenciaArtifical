@@ -1,15 +1,15 @@
 from chatbot import ChatBot
 myChatBot = ChatBot()
 #apenas carregar um modelo pronto
-#myChatBot.loadModel()
+myChatBot.loadModel()
 
 #criar o modelo
-myChatBot.createModel()
+#myChatBot.createModel()
 
-print("Bem vindo ao MVP da FEI")
+print("Bem vindo ao ChatBot da FEI Relações Internacionais.")
 
 
-pergunta = input("O que desja saber sobre nossas relações internacionais?")
+pergunta = input("O que deseja saber sobre nossas relações internacionais?")
 resposta, intencao = myChatBot.chatbot_response(pergunta)
 print(resposta + "   ["+intencao[0]['intent']+"]")
 
