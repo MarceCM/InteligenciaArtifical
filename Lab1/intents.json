@@ -17,7 +17,7 @@
     },
     { "tag": "bolsas",
       "patterns":["Quais são as bolsas de estudo que eu posso obter?", "Quais são as bolsas de estudos internacionais?"],
-      "responses": ["Programa Top Espana, CAPES/Brafitec, Santander Superamos Juntos, Formula Santander, Bolsas Ibero Americanas e Programa Santander Mundi"]
+      "responses": ["Nós temos algumas bolsas de estudos disponiveis, são elas: Programa Top Espana, CAPES/Brafitec, Santander Superamos Juntos, Formula Santander, Bolsas Ibero Americanas e Programa Santander Mundi"]
     },
     { "tag": "bolsaSuperamosJuntos",
     "patterns":["O que é a bolsa Santander Superamos Juntos?", "Como faço para participar do Programa Santander Superamos Juntos"],

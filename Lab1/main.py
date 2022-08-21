@@ -9,13 +9,13 @@ myChatBot.createModel()
 print("Bem vindo ao ChatBot da FEI Relações Internacionais.")
 
 
-pergunta = input("O que deseja saber sobre nossas relações internacionais?")
+pergunta = input("O que deseja saber sobre nossas relações internacionais?\n")
 resposta, intencao = myChatBot.chatbot_response(pergunta)
 print(resposta + "   ["+intencao[0]['intent']+"]")
 
 
 while (intencao[0]['intent']!="despedida"):
-    pergunta = input("Posso lhe ajudar com algo a mais?")
+    pergunta = input("Posso lhe ajudar com algo a mais?\n")
     resposta, intencao = myChatBot.chatbot_response(pergunta)
     print(resposta + "   [" + intencao[0]['intent'] + "]")
 
