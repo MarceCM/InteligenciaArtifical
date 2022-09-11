@@ -1,0 +1,48 @@
+progenitor(pedro, joao)
+progenitor(pedro, clara)
+progenitor(pedro, francisco)
+progenitor(pedro, ana)
+progenitor(joão, mario)
+progenitor(mario, carlos)
+
+progenitor(antonia, joao)
+progenitor(antonia, clara)
+progenitor(antonia, francisco)
+progenitor(antonia, ana)
+progenitor(ana, helena)
+progenitor(ana, joana)
+progenitor(helena, carlos)
+progenitor(clara, pietro)
+progenitor(clara, enzo)
+
+casado(francisco, milene)
+casado(pietro, francisca)
+casado(enzo, antonia2)
+
+
+sexo(pedro, masculino)
+sexo(joao, masculino)
+sexo(francisco, masculino)
+sexo(mario, masculino)
+sexo(carlos, masculino)
+sexo(pietro, masculino)
+sexo(enzo, masculino)
+sexo(antonia, feminino)
+sexo(clara, feminino)
+sexo(ana, feminino)
+sexo(helena, feminino)
+sexo(joana, feminino)
+sexo(milene, feminino)
+sexo(francisca, feminino)
+
+
+avom(X,Y) :- progenitor(X,Z), progenitor(Z,Y), sexo(X, masculino)
+
+avof(X,Y) :-  progenitor(X,Z), progenitor(Z,Y), sexo(X, feminino)
+
+irma(X,Y) :- progenitor(A,X), progenitor (A,Y), X\==Y, sexo(X, feminino)
+irmao(X,Y) :- progenitor(A,X), progenitor (A,Y), X\==Y, sexo(X, masculino)
+
+
+
+
