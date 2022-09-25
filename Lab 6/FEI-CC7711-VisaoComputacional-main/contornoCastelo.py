@@ -42,7 +42,7 @@ final = cv2.drawContours(img_copy, contours, contourIdx = -1,
 
 
 #plot imagens
-imagens = [img,img_gray,img_blur,edges_blur,final]
+imagens = [final]
 formatoX = math.ceil(len(imagens)**.5)
 if (formatoX**2-len(imagens))>formatoX:
     formatoY = formatoX-1
