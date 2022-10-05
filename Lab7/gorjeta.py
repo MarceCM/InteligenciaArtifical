@@ -4,58 +4,62 @@ import matplotlib.pyplot as plt
 from skfuzzy import control as ctrl
 
 #Variaveis de Entrada (Antecedent)
-qualidade = ctrl.Antecedent(np.arange(0, 11, 1), 'qualidade')
-servico = ctrl.Antecedent(np.arange(0, 11, 1), 'servico')
+comida = ctrl.Antecedent(np.arange(0, 9, 1), 'comida')
+peso = ctrl.Antecedent(np.arange(0, 11, 1), 'peso')
 
 #Variaveis de saída (Consequent)
-gorjeta = ctrl.Consequent(np.arange(0, 31, 1), 'gorjeta')
+quilo = ctrl.Consequent(np.arange(0, 31, 1), 'quilo')
 
 # automf -> Atribuição de categorias automaticamente
-qualidade.automf(names=['ruim','ok','otima'],)
-servico.automf(names=['ruim','medio','bom'])
+comida.automf(names=['pouco','razoavel','bastante'],)
+peso.automf(names=['leve','medio','pesado'])
 
-# atribuicao sem o automf
-gorjeta['minima'] = fuzz.gaussmf(gorjeta.universe, 0,.1)
-gorjeta['baixa'] = fuzz.gaussmf(gorjeta.universe, .1, 3)
-gorjeta['media'] = fuzz.gaussmf(gorjeta.universe, 15,5)
-gorjeta['alta'] = fuzz.gaussmf(gorjeta.universe, 30,5)
+# atribuicao gaussiana
+quilo['minimo'] = fuzz.gaussmf(quilo.universe, 0,.1)
+quilo['baixo'] = fuzz.gaussmf(quilo.universe, .1, 3)
+quilo['medio'] = fuzz.gaussmf(quilo.universe, 15,5)
+quilo['alto'] = fuzz.gaussmf(quilo.universe, 30,5)
+quilo.view()
 
+# atribuicao trapezoidal
+quilo['minimo'] = fuzz.trapmf(quilo.universe, [0,.1,2,5])
+quilo['baixo'] = fuzz.trapmf(quilo.universe, [.1, 3, 6, 10])
+quilo['medio'] = fuzz.trapmf(quilo.universe, [15,20,25,30])
+quilo['alto'] = fuzz.trapmf(quilo.universe, [30,35,40,45])
+quilo.view()
 
 #Visualizando as variáveis
-qualidade.view()
-servico.view()
-gorjeta.view()
-
+comida.view()
+peso.view()
 
 
 #Criando as regras
-regra_1 = ctrl.Rule(qualidade['ruim'] & servico['ruim'], gorjeta['minima'])
-regra_2 = ctrl.Rule(qualidade['ruim'] | servico['ruim'], gorjeta['baixa'])
-regra_3 = ctrl.Rule(servico['medio'], gorjeta['media'])
-regra_4 = ctrl.Rule(servico['bom'] | qualidade['otima'], gorjeta['alta'])
+regra_1 = ctrl.Rule(comida['pouco'] & peso['leve'], quilo['minimo'])
+regra_2 = ctrl.Rule(comida['pouco'] & peso['medio'], quilo['medio'])
+regra_3 = ctrl.Rule(peso['pesado'] & comida['bastante'], quilo['alto'])
 
-controlador = ctrl.ControlSystem([regra_1, regra_2, regra_3,regra_4])
+controlador = ctrl.ControlSystem([regra_1, regra_2, regra_3])
 
 
 #Simulando
-CalculoGorjeta = ctrl.ControlSystemSimulation(controlador)
+Calculoquilo = ctrl.ControlSystemSimulation(controlador)
 
-notaQualidade = int(input('Qualidade: '))
-notaServico = int(input('Servico: '))
-CalculoGorjeta.input['qualidade'] = notaQualidade
-CalculoGorjeta.input['servico'] = notaServico
-CalculoGorjeta.compute()
+notaQualidade = int(input('Comida: '))
+notaServico = int(input('Peso: '))
+Calculoquilo.input['comida'] = notaQualidade
+Calculoquilo.input['peso'] = notaServico
+Calculoquilo.compute()
 
-valorGorjeta = CalculoGorjeta.output['gorjeta']
+valorquilo = Calculoquilo.output['quilo']
 
-print("\nQualidade %d \nServiço %d \nGorjeta de %5.2f" %(
+print("\nComida %d \nPeso %d \nQuilo %5.2f" %(
         notaQualidade,
         notaServico,
-        valorGorjeta))
+        valorquilo))
 
 
-qualidade.view(sim=CalculoGorjeta)
-servico.view(sim=CalculoGorjeta)
-gorjeta.view(sim=CalculoGorjeta)
+comida.view(sim=Calculoquilo)
+peso.view(sim=Calculoquilo)
+quilo.view(sim=Calculoquilo)
 
 plt.show()
