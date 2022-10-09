@@ -12,13 +12,6 @@ quilo = ctrl.Consequent(np.arange(0, 11, 1), 'quilo')
 # automf -> Atribuição de categorias automaticamente
 comida.automf(names=['pouco','razoavel','bastante'],)
 
-# atribuicao gaussiana
-quilo['leve'] = fuzz.gaussmf(quilo.universe, 0,.1)
-quilo['medio'] = fuzz.gaussmf(quilo.universe, .1, 3)
-quilo['pesado'] = fuzz.gaussmf(quilo.universe, 15,5)
-
-quilo.view()
-
 # atribuicao trapezoidal
 quilo['leve'] = fuzz.trapmf(quilo.universe, [0,0,4,6])
 quilo['medio'] = fuzz.trapmf(quilo.universe, [4, 6, 8, 10])
